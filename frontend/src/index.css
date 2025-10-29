@@ -1,0 +1,24 @@
+/* Basic reset to ensure consistent box model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Use a clean, modern font */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+  min-height: 100vh;
+}
+
+/* Custom utility to handle the top banner offset cleanly */
+.app-container {
+    padding-top: 36px; /* Offset for the fixed top banner */
+}
+
+/* Ensure icons/text elements used as placeholders look good */
+.icon-placeholder {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #e9ecef;
+}
